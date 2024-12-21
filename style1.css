@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+header nav{
+    background-color: #3d494d;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: linear-gradient(90deg, #8a2be2, #ff69b4); 
+}
+ /* Main Container */
+.Weather-container{
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+#name{
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+}
+
+
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type="text"],button[type="button"]{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.weather-details-content{
+    display:none;
+    background-color: #e0e1dd;
+    color: black;
+    padding: 10px;
+    position:fixed;
+    height: 400px;
+    width: 800px;
+    right: 20%;
+    align-content: center;
+    text-align: center;
+}
+
+/* Target h1 and h3 inside a div */
+ .weather-details-content h1, .weather-details-content h3 {
+    line-height: 1.8; /* Adjust the spacing between lines */
+    margin-bottom: 10px; /* Add space below each line */
+}
+
+.search-bar:hover,.searchBtn:hover{
+    cursor: pointer;
+}
+
+.closeBtn{
+    position: relative;
+    left: 46.5%;
+    top: -20%;
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
